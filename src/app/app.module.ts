@@ -9,6 +9,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { EditMomentComponent } from './components/pages/edit-moment/edit-moment.component';
+import { MomentComponent } from './components/pages/moment/moment.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { HomeComponent } from './components/pages/home/home.component';
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    NewMomentComponent,
+    MessagesComponent,
+    EditMomentComponent,
+    MomentComponent
   ],
   imports: [
     BrowserModule,
