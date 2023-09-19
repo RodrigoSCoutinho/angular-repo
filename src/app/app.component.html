@@ -1,1 +1,23 @@
-<h1>Hello World!</h1>
+<h1>Brasileirao Serie B</h1>
+
+
+<table class="styled-table">
+    <thead>
+        <th>Posicao</th>
+        <th>Escudo</th>
+        <th>Time</th>
+        <th>Pontos</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let time of tabela | async">
+            <td>{{time.nome}}</td>
+            <td><img class="escudo" src="{{time.time.escudo}}"></td>
+            <td>{{time.time.nome_popular}}</td>
+            <td>{{time.pontos}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<pre>
+    {{tabela | async | json}}
+</pre>
